@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://e1un383kmsbn"]
+
+[ext_resource type="PackedScene" uid="uid://winn6qw5derp" path="res://Assets/Models/Models/pine_tree_1.tscn" id="1_5klxq"]
+[ext_resource type="PackedScene" uid="uid://beem1qy3gpiia" path="res://Assets/Models/Models/pine_tree_2.tscn" id="2_v5t6w"]
+[ext_resource type="PackedScene" uid="uid://b1n3exknfnffg" path="res://Assets/Models/Models/pine_tree_3.tscn" id="3_veh3a"]
+[ext_resource type="PackedScene" uid="uid://dsvca6twk170o" path="res://Assets/Models/Models/pine_tree_4.tscn" id="4_ijmsl"]
+
+[node name="Arveres" type="Node3D"]
+
+[node name="PineTree1" parent="." instance=ExtResource("1_5klxq")]
+
+[node name="PineTree5" parent="." instance=ExtResource("1_5klxq")]
+transform = Transform3D(0.23775, -3.79157e-08, 0.232725, 0, 0.332695, 5.4203e-08, -0.232725, -3.87345e-08, 0.23775, -1.5249, 2.6, -2.27173)
+
+[node name="PineTree2" parent="." instance=ExtResource("2_v5t6w")]
+transform = Transform3D(-1.45426e-08, -5.4203e-08, 0.332695, 0, 0.332695, 5.4203e-08, -0.332695, 2.36929e-15, -1.45426e-08, 0.550611, 2.6, 1.41728)
+
+[node name="PineTree6" parent="." instance=ExtResource("2_v5t6w")]
+transform = Transform3D(-1.45426e-08, -5.4203e-08, 0.332695, 0, 0.332695, 5.4203e-08, -0.332695, 2.36929e-15, -1.45426e-08, -2.52361, 2.6, -0.112041)
+
+[node name="PineTree3" parent="." instance=ExtResource("3_veh3a")]
+transform = Transform3D(0.122883, -5.03702e-08, 0.309169, 0, 0.332695, 5.4203e-08, -0.309169, -2.00203e-08, 0.122883, -1.69575, 2.4, 2.10186)
+
+[node name="PineTree7" parent="." instance=ExtResource("3_veh3a")]
+transform = Transform3D(-0.20093, -4.32012e-08, 0.265166, 0, 0.332695, 5.4203e-08, -0.265166, 3.27357e-08, -0.20093, 2.08356, 2.4, -0.0273175)
+
+[node name="PineTree4" parent="." instance=ExtResource("4_ijmsl")]
+transform = Transform3D(-0.119005, -5.06167e-08, 0.310683, 0, 0.332695, 5.4203e-08, -0.310683, 1.93884e-08, -0.119005, 1.23174, 3, -1.71861)
