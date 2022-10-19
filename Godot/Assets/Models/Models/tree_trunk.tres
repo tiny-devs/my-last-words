@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://yhrigpja5glg"]
-
-[ext_resource type="Texture2D" uid="uid://dqlcriepra6os" path="res://Assets/Models/Textures/STColumnarTrunkTexture.png" id="1_75f81"]
-
-[resource]
-resource_name = "tronco2"
-cull_mode = 2
-albedo_texture = ExtResource("1_75f81")
-metallic_specular = 0.0
