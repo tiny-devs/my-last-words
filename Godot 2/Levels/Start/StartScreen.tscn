@@ -10,8 +10,8 @@ margin_bottom = 227.0
 script = ExtResource( 2 )
 
 [node name="ColorRect" type="ColorRect" parent="Control"]
-margin_right = 383.0
-margin_bottom = 227.0
+margin_right = 1035.0
+margin_bottom = 650.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="Label" type="Label" parent="Control"]
@@ -19,6 +19,7 @@ margin_left = 114.0
 margin_top = 103.0
 margin_right = 265.0
 margin_bottom = 126.0
+rect_scale = Vector2( 5, 5 )
 text = "START"
 align = 1
 valign = 1

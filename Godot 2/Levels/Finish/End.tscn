@@ -10,16 +10,16 @@ margin_bottom = 227.0
 script = ExtResource( 2 )
 
 [node name="ColorRect" type="ColorRect" parent="End"]
-margin_right = 383.0
-margin_bottom = 227.0
+margin_right = 1037.0
+margin_bottom = 651.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="Label" type="Label" parent="End"]
-visible = false
-margin_left = 2.0
-margin_top = 66.0
-margin_right = 382.0
-margin_bottom = 108.0
+margin_left = -428.0
+margin_top = 62.0
+margin_right = -48.0
+margin_bottom = 104.0
+rect_scale = Vector2( 5, 5 )
 text = "The end"
 align = 1
 valign = 1

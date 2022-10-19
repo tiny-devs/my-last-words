@@ -1,7 +1,17 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Assets/Models/Trees/Wood_6.material" type="Material" id=1]
+[ext_resource path="res://Assets/Models/Trees/Wood_14.jpg" type="Texture" id=1]
 [ext_resource path="res://Assets/Models/Trees/Branch_2.material" type="Material" id=2]
+[ext_resource path="res://Assets/Shaders/PS1.tres" type="Shader" id=3]
+
+[sub_resource type="ShaderMaterial" id=7]
+shader = ExtResource( 3 )
+shader_param/jitter = 0.7
+shader_param/jitter_z_coordinate = true
+shader_param/jitter_depth_independent = true
+shader_param/affine_texture_mapping = true
+shader_param/alpha_scissor = 1.0
+shader_param/albedo = ExtResource( 1 )
 
 [sub_resource type="ArrayMesh" id=6]
 resource_name = "Cylinder.002"
@@ -25,7 +35,7 @@ surfaces/1 = {
 "blend_shape_data": [  ],
 "format": 2194711,
 "index_count": 684,
-"material": ExtResource( 1 ),
+"material": SubResource( 7 ),
 "name": "Wood_6",
 "primitive": 4,
 "skeleton_aabb": [  ],
