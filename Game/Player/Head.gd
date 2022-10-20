@@ -10,8 +10,10 @@ var mouse_axis := Vector2()
 var rot := Vector3()
 
 func _ready():
-	if get_node('/root/Game/Lighting/WorldEnvironment').get_environment().fog_enabled:
+	var game_env = get_node('/root/Game/Lighting/WorldEnvironment').get_environment()
+	if game_env.fog_enabled:
 		fog.visible = true
+		fog.mesh.material.albedo_color = game_env.fog_color
 	if Globals.is_mobile:
 		mouse_sensitivity = mouse_sensitivity / 200
 	else:

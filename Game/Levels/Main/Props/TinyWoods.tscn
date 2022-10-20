@@ -12,6 +12,7 @@
 [ext_resource path="res://Levels/Main/Props/TinyWoods.gd" type="Script" id=10]
 
 [node name="Woods" type="Spatial"]
+visible = false
 script = ExtResource( 10 )
 
 [node name="Tree_1" parent="." instance=ExtResource( 1 )]
