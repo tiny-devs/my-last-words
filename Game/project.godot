@@ -32,9 +32,9 @@ Signals="*res://Signals.gd"
 
 [display]
 
-window/size/height=640
+window/size/width=800
 window/size/test_width=1024
-window/size/test_height=640
+window/size/test_height=768
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Imgs/brush_small.png" type="Texture" id=1]
+
+[sub_resource type="SpatialMaterial" id=6]
+flags_transparent = true
+albedo_color = Color( 0.8, 0.512, 0.44, 1 )
+albedo_texture = ExtResource( 1 )
+uv1_scale = Vector3( 1, 1, 0.283 )
+uv1_offset = Vector3( 0.5, 0, 0 )
+uv1_triplanar = true
+
+[sub_resource type="PlaneMesh" id=5]
+material = SubResource( 6 )
+size = Vector2( 1, 7 )
+
+[node name="MeshInstance" type="MeshInstance"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.02194, 0.251, 12.9675 )
+mesh = SubResource( 5 )
