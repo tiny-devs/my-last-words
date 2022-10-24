@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Levels/Main/Props/EndGame.gd" type="Script" id=1]
+
+[sub_resource type="BoxShape" id=20]
+extents = Vector3( 1.58322, 1, 1.78663 )
+
+[node name="EndGame" type="Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.62446, 2.45961, 0 )
+script = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.155426 )
+shape = SubResource( 20 )
+
+[connection signal="body_entered" from="." to="." method="_on_EndGame_body_entered"]
