@@ -29,9 +29,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.74066, 0, 1.59673 )
 [node name="Tree_31" parent="." instance=ExtResource( 2 )]
 transform = Transform( 0.850738, 0, -0.52559, 0, 0.6, 0, 0.52559, 0, 0.850738, 6.03115, 0, 2.45594 )
 
-[node name="Tree_22" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.26542, 0, 4.5891 )
-
 [node name="Tree_23" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.585908, 0, 5.27099 )
 
