@@ -1,3 +1,5 @@
 extends Node
 
 signal start_game
+signal player_enters_safe_zone
+signal player_leaves_the_safe_zone
