@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tree04.obj-ae4f4507427fb3a8449e413da197d849.mesh"
+
+[deps]
+
+files=[ "res://.import/tree04.obj-ae4f4507427fb3a8449e413da197d849.mesh" ]
+
+source_file="res://Assets/Models/retro_nature_pack/trees/tree04.obj"
+dest_files=[ "res://.import/tree04.obj-ae4f4507427fb3a8449e413da197d849.mesh", "res://.import/tree04.obj-ae4f4507427fb3a8449e413da197d849.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

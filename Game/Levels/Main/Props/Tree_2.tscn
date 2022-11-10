@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Assets/Models/Trees/Wood_04.jpg" type="Texture" id=1]
 [ext_resource path="res://Assets/Models/Trees/Branch_05.png" type="Texture" id=2]
@@ -55,5 +55,14 @@ surfaces/1 = {
 "vertex_count": 768
 }
 
+[sub_resource type="BoxShape" id=8]
+extents = Vector3( 0.123925, 1.03164, 0.0966411 )
+
 [node name="Tree_2" type="MeshInstance"]
 mesh = SubResource( 5 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0299639, 0.875379, 0 )
+shape = SubResource( 8 )

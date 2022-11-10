@@ -10,6 +10,8 @@ shader_param/jitter_z_coordinate = true
 shader_param/jitter_depth_independent = true
 shader_param/affine_texture_mapping = true
 shader_param/alpha_scissor = 1.0
+shader_param/uv1_scale = Vector3( 1, 1, 1 )
+shader_param/uv1_offset = null
 shader_param/albedo = ExtResource( 1 )
 
 [sub_resource type="ArrayMesh" id=1]
@@ -28,5 +30,5 @@ surfaces/0 = {
 }
 
 [node name="bush06" type="MeshInstance"]
-transform = Transform( 0.005, 0, 0, 0, 0.005, 8.14605e-10, 0, -8.14605e-10, 0.005, 0, 0, 0 )
+transform = Transform( 0.003, 0, 0, 0, 0.003, 4.88763e-10, 0, -4.88763e-10, 0.003, 0, 0, 0 )
 mesh = SubResource( 1 )

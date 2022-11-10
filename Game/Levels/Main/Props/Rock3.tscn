@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Shaders/PS1.tres" type="Shader" id=1]
+[ext_resource path="res://Levels/Main/Materials/R.jpg" type="Texture" id=2]
+
+[sub_resource type="ShaderMaterial" id=7]
+shader = ExtResource( 1 )
+shader_param/jitter = 0.6
+shader_param/jitter_z_coordinate = true
+shader_param/jitter_depth_independent = true
+shader_param/affine_texture_mapping = true
+shader_param/alpha_scissor = 1.0
+shader_param/uv1_scale = Vector3( 1, 1, 1 )
+shader_param/uv1_offset = null
+shader_param/albedo = ExtResource( 2 )
+
+[sub_resource type="ArrayMesh" id=6]
+resource_name = "Cube.014"
+surfaces/0 = {
+"aabb": AABB( -0.98605, -0.284954, -1.02714, 2, 1.05615, 2.00001 ),
+"array_data": PoolByteArray( 198, 109, 124, 191, 136, 229, 145, 190, 131, 13, 121, 63, 174, 47, 205, 20, 141, 56, 213, 54, 71, 67, 232, 190, 174, 121, 16, 63, 112, 187, 243, 190, 193, 99, 168, 44, 48, 54, 57, 58, 198, 109, 124, 191, 136, 229, 145, 190, 66, 121, 131, 191, 178, 48, 214, 29, 141, 56, 255, 59, 198, 109, 124, 191, 136, 229, 145, 190, 66, 121, 131, 191, 76, 123, 133, 66, 141, 56, 255, 59, 9, 213, 231, 62, 46, 94, 215, 62, 163, 160, 241, 190, 65, 94, 168, 86, 118, 50, 108, 58, 29, 201, 129, 63, 136, 229, 145, 190, 66, 121, 131, 191, 70, 91, 171, 89, 102, 32, 252, 59, 29, 201, 129, 63, 136, 229, 145, 190, 131, 13, 121, 63, 79, 52, 209, 100, 144, 6, 13, 55, 82, 140, 246, 62, 171, 162, 32, 63, 122, 241, 215, 62, 37, 64, 180, 83, 61, 51, 251, 56, 198, 109, 124, 191, 136, 229, 145, 190, 131, 13, 121, 63, 2, 44, 136, 66, 141, 56, 213, 54, 29, 201, 129, 63, 136, 229, 145, 190, 131, 13, 121, 63, 0, 47, 134, 66, 144, 6, 13, 55, 29, 201, 129, 63, 136, 229, 145, 190, 66, 121, 131, 191, 0, 129, 0, 63, 142, 56, 255, 59, 198, 109, 124, 191, 136, 229, 145, 190, 131, 13, 121, 63, 0, 129, 0, 63, 255, 59, 142, 56, 198, 109, 124, 191, 136, 229, 145, 190, 66, 121, 131, 191, 0, 129, 0, 63, 142, 56, 142, 56, 255, 139, 217, 190, 66, 109, 69, 63, 174, 214, 213, 62, 228, 71, 157, 41, 202, 53, 29, 57, 29, 201, 129, 63, 136, 229, 145, 190, 131, 13, 121, 63, 0, 129, 0, 63, 255, 59, 255, 59 ),
+"array_index_data": PoolByteArray( 0, 0, 2, 0, 1, 0, 3, 0, 5, 0, 4, 0, 4, 0, 5, 0, 6, 0, 7, 0, 9, 0, 8, 0, 10, 0, 12, 0, 11, 0, 1, 0, 4, 0, 7, 0, 0, 0, 1, 0, 13, 0, 3, 0, 4, 0, 1, 0, 4, 0, 6, 0, 7, 0, 7, 0, 8, 0, 13, 0, 10, 0, 11, 0, 14, 0, 1, 0, 7, 0, 13, 0 ),
+"blend_shape_data": [  ],
+"format": 2194711,
+"index_count": 36,
+"material": SubResource( 7 ),
+"name": "Material.008",
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 15
+}
+
+[sub_resource type="BoxShape" id=8]
+extents = Vector3( 0.791286, 0.530851, 0.788375 )
+
+[node name="Rock3" type="MeshInstance"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0 )
+mesh = SubResource( 6 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0681591, 0.114129, 0.143609 )
+shape = SubResource( 8 )
