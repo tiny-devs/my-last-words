@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Deposits_01.jpg-80d0952fd3cd072db43ad3985a958021.s3tc.stex"
-path.etc2="res://.import/Deposits_01.jpg-80d0952fd3cd072db43ad3985a958021.etc2.stex"
+path.s3tc="res://.import/R2.png-dd2b563b399747f6c4e853f3ba33637b.s3tc.stex"
+path.etc2="res://.import/R2.png-dd2b563b399747f6c4e853f3ba33637b.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Levels/Main/Materials/Deposits_01.jpg"
-dest_files=[ "res://.import/Deposits_01.jpg-80d0952fd3cd072db43ad3985a958021.s3tc.stex", "res://.import/Deposits_01.jpg-80d0952fd3cd072db43ad3985a958021.etc2.stex" ]
+source_file="res://Levels/Main/Materials/R2.png"
+dest_files=[ "res://.import/R2.png-dd2b563b399747f6c4e853f3ba33637b.s3tc.stex", "res://.import/R2.png-dd2b563b399747f6c4e853f3ba33637b.etc2.stex" ]
 
 [params]
 

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Deposits_01.jpg-80d0952fd3cd072db43ad3985a958021.s3tc.stex"
-path.etc2="res://.import/Deposits_01.jpg-80d0952fd3cd072db43ad3985a958021.etc2.stex"
+path.s3tc="res://.import/bush2_summer.png-03c2f59814a113f7ac570154f430bbce.s3tc.stex"
+path.etc2="res://.import/bush2_summer.png-03c2f59814a113f7ac570154f430bbce.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Levels/Main/Materials/Deposits_01.jpg"
-dest_files=[ "res://.import/Deposits_01.jpg-80d0952fd3cd072db43ad3985a958021.s3tc.stex", "res://.import/Deposits_01.jpg-80d0952fd3cd072db43ad3985a958021.etc2.stex" ]
+source_file="res://Levels/Main/Materials/bush2_summer.png"
+dest_files=[ "res://.import/bush2_summer.png-03c2f59814a113f7ac570154f430bbce.s3tc.stex", "res://.import/bush2_summer.png-03c2f59814a113f7ac570154f430bbce.etc2.stex" ]
 
 [params]
 

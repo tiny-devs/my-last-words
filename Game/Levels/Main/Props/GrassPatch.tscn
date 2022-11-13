@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Levels/Main/Geometry/grass_patch.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Levels/Main/Materials/grass_summer.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Shaders/PS1.tres" type="Shader" id=3]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 3 )
+shader_param/jitter = 0.6
+shader_param/jitter_z_coordinate = true
+shader_param/jitter_depth_independent = true
+shader_param/affine_texture_mapping = false
+shader_param/alpha_scissor = 1.0
+shader_param/uv1_scale = Vector3( 2, 1.5, 1 )
+shader_param/uv1_offset = Vector3( 0, -0.145, 0 )
+shader_param/albedo = ExtResource( 2 )
+
+[node name="GrassPatch" type="MeshInstance"]
+transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0.2, 0 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
